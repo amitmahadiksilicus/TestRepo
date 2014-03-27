@@ -1,0 +1,24 @@
+
+Enable-Migrations -ContextTypeName MvcMovie.Models.MovieDBContext
+
+change seed method
+
+Resolve then using MvcMovie.Models;
+
+Build
+
+add-migration Initial
+
+update-database
+
+Adding new Property to the your Model
+
+change code in Index,create view etc.
+
+add paramenetr in seed method
+
+add-migration Add_CHANGE_NAME_Migration
+
+update-database
+
+Done!

@@ -1,0 +1,29 @@
+﻿@model MVC_College.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Student</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudentName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudentName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StdandardId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StdandardId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.StudentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
